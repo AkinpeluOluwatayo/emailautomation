@@ -5,7 +5,7 @@ export default function Home() {
     const handleSend = async () => {
         const response = await sendBulkEmails();
         if (response.success) {
-            alert("Emails sent successfully!");
+            alert("Emails sent successfully!!!!!!!!!!!");
         } else {
             alert("Error: " + response.error);
         }
