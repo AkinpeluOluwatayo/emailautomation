@@ -2,24 +2,24 @@
 import { sendBulkEmails } from '@/actions/sendBulkEmails';
 
 export default function Home() {
-  const handleSend = async () => {
-    const response = await sendBulkEmails();
-    if (response.success) {
-      alert("Emails sent successfully!");
-    } else {
-      alert("Error: " + response.error);
-    }
-  };
+    const handleSend = async () => {
+        const response = await sendBulkEmails();
+        if (response.success) {
+            alert("Emails sent successfully!");
+        } else {
+            alert("Error: " + response.error);
+        }
+    };
 
-  return (
-      <main className="flex flex-col items-center justify-center min-h-screen p-24">
-        <h1 className="text-2xl font-bold mb-4">Email Automation Practice</h1>
-        <button
-            onClick={handleSend}
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-        >
-          Send Test Emails
-        </button>
-      </main>
-  );
+    return (
+        <main className="flex flex-col items-center justify-center min-h-screen p-24 bg-gray-50">
+            <h1 className="text-3xl font-bold mb-6 text-[#2d5a27]">Elroi Farms Automation</h1>
+            <button
+                onClick={handleSend}
+                className="px-8 py-4 bg-[#2d5a27] text-white rounded-xl shadow-lg hover:bg-[#1e3d1a] transition-all transform active:scale-95 font-semibold"
+            >
+                Send Bulk Welcome Emails
+            </button>
+        </main>
+    );
 }
