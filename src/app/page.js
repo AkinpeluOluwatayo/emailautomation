@@ -1,5 +1,5 @@
 'use client'
-import { sendBulkEmails } from '../actions/sendBulkEmails';
+import { sendBulkEmails } from '@/app/actions/sendBulkEmails';
 
 export default function Home() {
     const handleSend = async () => {
