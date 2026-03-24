@@ -1,9 +1,9 @@
 'use client'
-import { sendPracticeEmails } from './actions/sendEmail';
+import { sendBulkEmails } from '@/actions/sendBulkEmails';
 
 export default function Home() {
   const handleSend = async () => {
-    const response = await sendPracticeEmails();
+    const response = await sendBulkEmails();
     if (response.success) {
       alert("Emails sent successfully!");
     } else {
