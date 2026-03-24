@@ -18,7 +18,7 @@ export default function Home() {
                 onClick={handleSend}
                 className="px-8 py-4 bg-[#2d5a27] text-white rounded-xl shadow-lg hover:bg-[#1e3d1a] transition-all transform active:scale-95 font-semibold"
             >
-                Send Bulk Welcome Emails
+                Send Bulk Welcome Emails to People
             </button>
         </main>
     );
